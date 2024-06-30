@@ -1,4 +1,4 @@
-# [rssschool-cv](https://tsubasakatakiri.github.io/rsschool-cv/cv)
+# [rsschool-cv](https://tsubasakatakiri.github.io/rsschool-cv/cv)
 
 # __Aliaksei Reut__
 
