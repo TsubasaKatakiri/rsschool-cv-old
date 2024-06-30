@@ -43,3 +43,7 @@ function incrementString (strng) {
 * __Courses__
     + _Clevertec Frontend Lab(2023, 2024)_
     + _RS School Course «JavaScript/Front-end. Stage#0» (in progress)_
+
+## __Languages__
+* __Russian__ - Native
+* __English__ - B1 (in progress)
