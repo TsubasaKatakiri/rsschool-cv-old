@@ -13,7 +13,20 @@
 * __Telegram:__ [@aliakseireut](https://t.me/Aliaksei_Reut)
 * __Discord:__ [Tsubasa Katakiri](discordapp.com/users/844284828114354186)
 
+## __Skills__
 
+* Hard skills
+    + HTML5
+    + CSS3, SASS, BEM methodology
+    + JavaScript (ES6+) / TypeScript
+    + React, React-Redux, Redux-Toolkit
+    + REST API
+    + Git
+    + Figma
+* Soft skills
+    + High workability
+    + Sociability, friendliness, tolerance
+    + Effective and quick learnability
 
 ## __Code example__
 
