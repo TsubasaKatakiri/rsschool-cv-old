@@ -13,6 +13,10 @@
 * __Telegram:__ [@aliakseireut](https://t.me/Aliaksei_Reut)
 * __Discord:__ [Tsubasa Katakiri](discordapp.com/users/844284828114354186)
 
+## __About me__
+
+Good daytime! I'm 31 years old, currently working as a sales manager, but willing to find my place in the world of front-end development. I have finished long-term courses at the STEP IT Computer Academy (Minsk) as software developer. I have good basic programming knowledge and write code with confidence and passion. My greatest strengths are high workability, diligence and great will for learning new technologies and honing existing skills.
+
 ## __Skills__
 
 * Hard skills
@@ -59,8 +63,8 @@ function incrementString (strng) {
 
 ## __Experience__   
 
-* __Doctor__ (Borisov Center of Hygiene and Epidemiology) - 2016-2020
-* __Sales Manager__ (RealSeven LLC) - 2023-present
+* __Doctor__ - 2016-2020
+* __Sales Manager__ - 2023-present
 
 ## __Languages__
 * __Russian__ - Native
