@@ -15,7 +15,7 @@
 
 ## __About me__
 
-Good daytime! I'm 31 years old, currently working as a sales manager, but willing to find my place in the world of front-end development. I have finished long-term courses at the STEP IT Computer Academy (Minsk) as software developer. I have good basic programming knowledge and write code with confidence and passion. My greatest strengths are high workability, diligence and great will for learning new technologies and honing existing skills.
+Good daytime! I'm 31 years old, currently working as a sales manager, but willing to find my place in the world of front-end development. I have finished long-term courses at the STEP IT Computer Academy (Minsk) as a software developer. I have good basic programming knowledge and write code with confidence and passion. My greatest strengths are high workability, diligence and great will for learning new technologies and honing existing skills.
 
 ## __Skills__
 
@@ -39,8 +39,8 @@ __[String incrementer kata from CODEWARS](https://www.codewars.com/kata/54a91a48
 ```
 function incrementString (strng) {
   if(strng.match('[0-9]$')){
-        let numPart = strng.split("").filter(e => e.match('[0-9]')).join("");
-        let textPart = strng.split("").filter(e => !e.match('[0-9]')).join("");
+        let numPart = strng.split('').filter(e => e.match('[0-9]')).join('');
+        let textPart = strng.split('').filter(e => !e.match('[0-9]')).join('');
         let numLength = numPart.length;
         numPart = `${((parseInt(numPart)) + 1)}`;
         numPart = numPart.length<numLength ? numPart.padStart(numLength, '0') : numPart;
@@ -55,17 +55,17 @@ function incrementString (strng) {
 ## __Education__
 
 * __Higher education__
-    + _Belarussian State Medical University_ (Faculty of Preventive Medicine) - 2010-2016
-    + _STEP IT Computer Academy (Minsk)_ (Software Development) - 2019-2022
+    + _Belarussian State Medical University_ (Faculty of Preventive Medicine) — 2010-2016
+    + _STEP IT Computer Academy (Minsk)_ (Software Development) — 2019-2022
 * __Courses__
     + _Clevertec Frontend Lab(2023, 2024)_
     + _RS School Course «JavaScript/Front-end. Stage#0» (in progress)_
 
 ## __Experience__   
 
-* __Doctor__ - 2016-2020
-* __Sales Manager__ - 2023-present
+* __Doctor__ — 2016-2020
+* __Sales Manager__ — 2023-present
 
 ## __Languages__
-* __Russian__ - Native
-* __English__ - B1 (in progress)
+* __Russian__ — Native
+* __English__ — B1 (in progress)
