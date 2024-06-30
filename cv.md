@@ -38,11 +38,16 @@ function incrementString (strng) {
 ## __Education__
 
 * __Higher education__
-    + _Belarussian State Medical University_ 
-    + _STEP IT Computer Academy (Minsk)_
+    + _Belarussian State Medical University_ (Faculty of Preventive Medicine) - 2010-2016
+    + _STEP IT Computer Academy (Minsk)_ (Software Development) - 2019-2022
 * __Courses__
     + _Clevertec Frontend Lab(2023, 2024)_
     + _RS School Course «JavaScript/Front-end. Stage#0» (in progress)_
+
+## __Experience__   
+
+* __Doctor__ (Borisov Center of Hygiene and Epidemiology) - 2016-2020
+* __Sales Manager__ (RealSeven LLC) - 2023-present
 
 ## __Languages__
 * __Russian__ - Native
