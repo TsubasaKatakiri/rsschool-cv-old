@@ -43,7 +43,7 @@ function incrementString (strng) {
         let textPart = strng.split('').filter(e => !e.match('[0-9]')).join('');
         let numLength = numPart.length;
         numPart = `${((parseInt(numPart)) + 1)}`;
-        numPart = numPart.length<numLength ? numPart.padStart(numLength, '0') : numPart;
+        numPart = numPart.length < numLength ? numPart.padStart(numLength, '0') : numPart;
         return `${textPart}${numPart}`;
     }
     else{
