@@ -35,3 +35,11 @@ function incrementString (strng) {
 }
 ```
 
+## __Education__
+
+* __Higher education__
+    + _Belarussian State Medical University_ 
+    + _STEP IT Computer Academy (Minsk)_
+* __Courses__
+    + _Clevertec Frontend Lab(2023, 2024)_
+    + _RS School Course «JavaScript/Front-end. Stage#0» (in progress)_
