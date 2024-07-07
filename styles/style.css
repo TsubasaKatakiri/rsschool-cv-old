@@ -1,3 +1,14 @@
+:root{
+    --bgcolor1: #383838;
+    --bgcolor2: #585858;
+    --bgcolor3: #dddddd;
+    --textcolor1: #282828;
+    --textcolor2: #ffffff;
+    --accentcolor: #ff86be;
+    --codecolor: #63af92;
+    --tagcolor: #668ee6;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +16,16 @@
 }
 
 body{
-    padding: 0 40px;
+    padding: 0 20px;
     width: 100%;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
-    background-color: #585858;
-    color: #383838;
+    background-color: var(--bgcolor2);
+    color: var(--textcolor1);
+}
+
+ul{
+    list-style-type: none;
 }
 
 .container{
@@ -25,11 +40,11 @@ body{
 }
 
 
-
+/* HEADER */
 
 .header{
     width: 100%;
-    background-color: #383838;
+    background-color: var(--bgcolor1);
     padding: 0 48px;
     height: 48px;
     display: flex;
@@ -63,15 +78,16 @@ body{
 
 .nav-link{
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--textcolor2);
     text-decoration: none;
 }
 
 .nav-item:hover{
-    background-color: #ff86be;
+    background-color: var(--accentcolor);
 }
 
 
+/* MAIN */
 
 .main{
     width: 100%;
@@ -79,8 +95,11 @@ body{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #DDDDDD;
+    background-color: var(--bgcolor3);
 }
+
+
+/* INFO BLOCKS */
 
 .personal-info{
     width: 400px;
@@ -89,13 +108,20 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border-right: 1px solid #282828;
+    border-right: 1px solid var(--textcolor1);
     padding-bottom: 8px;
 }
 
 .professional-info{
     width: calc(100% - 400px);
     padding: 8px 0;
+}
+
+.introducion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .personal-section, .professional-section{
@@ -108,7 +134,7 @@ body{
 }
 
 .person-name{
-    color: #282828;
+    color: var(--textcolor1);
     font-size: 32px;
 }
 
@@ -126,10 +152,6 @@ body{
     font-style: italic;
 }
 
-ul{
-    list-style-type: none;
-}
-
 .normal-link{
     text-decoration: none;
     color: #282828;
@@ -139,9 +161,11 @@ ul{
 }
 
 .normal-link:hover{
-    color: #ff86be;
+    color: var(--accentcolor);
 }
 
+
+/* SOCIAL */
 
 .social-list{
     list-style-type: none;
@@ -154,15 +178,16 @@ ul{
 }
 
 .social-list-icon{
-    fill: #282828;
+    fill: var(--textcolor1);
     transition: fill 0.15s linear;
 }
 
 .social-list-icon:hover{
-    fill: #ff86be;
+    fill: var(--accentcolor);
 }
 
 
+/* EDUCATION */
 
 .education-card{
     display: flex;
@@ -183,29 +208,33 @@ ul{
 .education-time{
     font-size: 14px;
     font-style: italic;
-    color: #585858;
+    color: var(--bgcolor2);
 }
 
 
+/* CODE BLOCK */
 
 .code-block{
-    background-color: #282828;
+    background-color: var(--bgcolor1);
     padding: 16px;
 }
 
 .pre-code{
-    color: #63af92;
+    color: var(--codecolor);
     font-size: 14px;
     line-height: 1.5;
 }
 
 .code-keyword{
-    color: #668ee6;
+    color: var(--tagcolor);
 }
+
+
+/* FOOTER */
 
 .footer{
     width: 100%;
-    background-color: #383838;
+    background-color: var(--bgcolor1);
     padding: 12px 48px;
     display: flex;
     flex-direction: row;
@@ -216,15 +245,89 @@ ul{
 .footer-contact-link{
     text-decoration: none;
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--textcolor2);
     text-decoration: none;
     transition: color 0.15s linear;
 }
 
 .footer-contact-link:hover{
-    color: #ff86be;
+    color: var(--accentcolor);
 }
 
 .footer-course-link{
     width: 160px;
+}
+
+
+@media (max-width: 1280px){
+    .personal-info{
+        width: 100%;
+        max-width: 360px;
+        min-width: unset;
+    }
+
+    .professional-info{
+        width: 100%;
+    }
+
+    .pre-code{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+
+@media (max-width: 990px){
+    .header{
+        padding: 0;
+    }
+
+    .nav-list{
+        font-size: 12px;
+    }
+
+    .main{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .personal-info{
+        width: 100%;
+        max-width: unset;
+        border-right: 0;
+        padding-bottom: 8px;
+    }
+
+    .introducion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 16px;
+    }
+
+    .person-avatar{
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .person-name{
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 0;
+    }
+
+    .person-name{
+        font-size: 48px;
+    }
+
+    .pre-code{
+        font-size: 10px;
+        line-height: 1.25;
+    }
 }
