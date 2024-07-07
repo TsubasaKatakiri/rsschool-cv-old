@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" sizes="16x16" href="favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
     <title>cv</title>
 </head>
 <body>
@@ -35,31 +42,58 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="personal-info">
+        <main class="main">
+            <div class="personal-info">
+                <img src="./assets/avatar.jpg" alt="avatar" class="person-avatar">
                 <section class="personal-section">
-                    <img src="assets/avatar.jpg" alt="person-avatar"/>
                     <h1 class="person-name">Aliaksei Reut</h1>
                 </section>
                 <section class="personal-section" id="contacts">
                     <h2 class="personal-title">Contact me</h2>
-                    <ul>
-                        <li>Location: Barysaw, Republic of Belarus</li>
-                        <li>Phone: +375 (29) 272-68-49</li>
-                        <li>Email (Business): <a href="mailto:aliakseireut93@gmail.com">aliakseireut93@gmail.com</a></li>
-                        <li>Email (Personal): <a href="mailto:katakiritsubasa@gmail.com">katakiritsubasa@gmail.com</a></li>
-                        <li><a href="https://github.com/TsubasaKatakiri">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/aleksei-reut-bbb89824a/">LinkedIn</a></li>
-                        <li><a href="https://t.me/Aliaksei_Reut">Telegram</a></li>
-                        <li><a href="https://discordapp.com/users/844284828114354186">Discord</a></li>
+                    <ul class="personal-list">
+                        <li><b>Location:</b> Barysaw, Republic of Belarus</li>
+                        <li><b>Phone:</b> <a href="tel:+375292726849" class="normal-link">+375 (29) 272-68-49</a></li>
+                        <li><b>Email (Business):</b> <a href="mailto:aliakseireut93@gmail.com" class="normal-link">aliakseireut93@gmail.com</a></li>
+                        <li><b>Email (Person):</b> <a href="mailto:katakiritsubasa@gmail.com" class="normal-link">katakiritsubasa@gmail.com</a></li>
+                    </ul>
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://github.com/TsubasaKatakiri">
+                                <svg class="social-list-icon" width="48px" height="48px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="none"/>
+                                    <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aleksei-reut-bbb89824a/">
+                                <svg class="social-list-icon" width="48px" height="48px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/Aliaksei_Reut">
+                                <svg class="social-list-icon" width="48px" height="48px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discordapp.com/users/844284828114354186">
+                                <svg class="social-list-icon" width="48px" height="48px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z"/>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </section>
                 <section class="personal-section" id="skills">
                     <h2 class="personal-title">Skills</h2>
-                    <ul>
+                    <ul class="personal-list">
                         <li>
                             <h3>Hard skills:</h3>
-                            <ul>
+                            <ul class="personal-list">
                                 <li>HTML5</li>
                                 <li>CSS3, SASS, BEM methodology</li>
                                 <li>JavaScript (ES6+) / TypeScript</li>
@@ -70,8 +104,8 @@
                             </ul>
                         </li>
                         <li>
-                            <h3>Soft skills</h3>
-                            <ul>
+                            <h3>Soft skills:</h3>
+                            <ul class="personal-list">
                                 <li>High workability</li>
                                 <li>Sociability, friendliness, tolerance</li>
                                 <li>Effective and quick learnability</li>
@@ -81,13 +115,13 @@
                 </section>
                 <section class="personal-section" id="languages">
                     <h2 class="personal-title">Languages</h2>
-                    <ul>
-                        <li>Russian — Native</li>
-                        <li>English — B1 (in progress)</li>
+                    <ul class="personal-list">
+                        <li><b>Russian</b> — Native</li>
+                        <li><b>English</b> — B1 (in progress)</li>
                     </ul>
                 </section>
-            </section>
-            <section class="professional-info">
+            </div>
+            <div class="professional-info">
                 <section class="professional-section" id="about">
                     <h2 class="professional-title">About Me</h2>
                     <p>Good daytime! I'm 31 years old, currently working as a sales manager, but willing to find my place in the world of front-end development. I have finished long-term courses at the STEP IT Computer Academy (Minsk) as a software developer. I have good basic programming knowledge and write code with confidence and passion. My greatest strengths are high workability, diligence and great will for learning new technologies and honing existing skills.</p>
@@ -98,50 +132,70 @@
                         <li>
                             <h3>Higher Education</h3>
                             <ul>
-                                <li>Belarussian State Medical University (Faculty of Preventive Medicine) — 2010-2016</li>
-                                <li>STEP IT Computer Academy (Minsk) (Software Development) — 2019-2022</li>
+                                <li class="education-card">
+                                    <span class="education-facility">Belarussian State Medical University</span>
+                                    <span class="education-faculty">Faculty of Preventive Medicine</span>
+                                    <span class="education-time">2010-2016</span>
+                                </li>
+                                <li class="education-card">
+                                    <span class="education-facility">STEP IT Computer Academy (Minsk)</span>
+                                    <span class="education-faculty">Software Development</span>
+                                    <span class="education-time">2019-2022</span>
+                                </li>
                             </ul>
                         </li>
                         <li>
                             <h3>Courses</h3>
                             <ul>
-                                <li>Clevertec Frontend Lab(2023, 2024)</li>
-                                <li>RS School Course «JavaScript/Front-end. Stage#0» (in progress)</li>
+                                <li><span class="education-facility">Clevertec Frontend Lab</span> (2023, 2024)</li>
+                                <li><span class="education-facility">RS School Course «JavaScript/Front-end. Stage#0»</span> (in progress)</li>
                             </ul>
                         </li>
                     </ul>
                 </section>
                 <section class="professional-section" id="experience">
                     <h2 class="professional-title">Experience</h2>
+                    <h3>Work</h3>
                     <ul>
-                        <li>Doctor — 2016-2020</li>
-                        <li>Sales Manager — 2023-present</li>
+                        <li><b>Doctor</b> — 2016-2020</li>
+                        <li><b>Sales Manager</b>— 2023-present</li>
+                    </ul>
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><b>Computer Service Landing Page</b> - <a href="https://github.com/TsubasaKatakiri/Landing-page-example" class="normal-link">Source</a>/<a href="https://tsubasakatakiri.github.io/Landing-page-example/" class="normal-link">Deployment</a></li>
+                        <li><b>Car Service Landing Page</b> - <a href="https://github.com/TsubasaKatakiri/Car-service-website" class="normal-link">Source</a>/<a href="https://tsubasakatakiri.github.io/Car-service-website/" class="normal-link">Deployment</a></li>
+                        <li><b>This task(CV)</b> - <a href="https://tsubasakatakiri.github.io/rsschool-cv/" class="normal-link">Source</a></li>
                     </ul>
                 </section>
                 <section class="professional-section" id="code">
                     <h2 class="professional-title">Code Example</h2>
-                    <pre>
-                        function incrementString (strng) {<br/>
-                            if(strng.match('[0-9]$')){<br/>
-                                  let numPart = strng.split('').filter(e => e.match('[0-9]')).join('');<br/>
-                                  let textPart = strng.split('').filter(e => !e.match('[0-9]')).join('');<br/>
-                                  let numLength = numPart.length;<br/>
-                                  numPart = `${((parseInt(numPart)) + 1)}`;<br/>
-                                  numPart = numPart.length < numLength ? numPart.padStart(numLength, '0') : numPart;<br/>
-                                  return `${textPart}${numPart}`;<br/>
-                              }<br/>
-                              else{<br/>
-                                  return `${strng}1`;<br/>
-                              }<br/>
-                          }<br/>
-                    </code>
+                    <div class="code-block">
+<pre class="pre-code">
+<code>
+<span class="code-keyword">function</span> incrementString (strng) {
+    <span class="code-keyword">if</span>(strng.match('[0-9]$')){
+        <span class="code-keyword">let</span> numPart = strng.split('').filter(e => e.match('[0-9]')).join('');
+        <span class="code-keyword">let</span> textPart = strng.split('').filter(e => !e.match('[0-9]')).join('');
+        <span class="code-keyword">let</span> numLength = numPart.length;
+        numPart = `${((parseInt(numPart)) + 1)}`;
+        numPart = numPart.length &lt; numLength ? numPart.padStart(numLength, '0') : numPart;
+        <span class="code-keyword">return</span> `${textPart}${numPart}`;
+    }
+    <span class="code-keyword">else</span>{
+        <span class="code-keyword">return</span> `${strng}1`;
+    }
+}
+</code>
+</pre>
+                    </div>
                 </section>
-            </section>
+            </div>
         </main>
         <footer class="footer">
-            <div class="contact">
-                <a href="https://github.com/TsubasaKatakiri" class="contact-link">Tsubasa Katakiri, 2024</a>
-            </div>
+            <a href="https://github.com/TsubasaKatakiri" class="footer-contact-link">Aliaksei Reut, 2024</a>
+            <a href="https://rs.school/courses/javascript-ru">
+                <img src="./assets/rs-school-logo.svg" alt="Rolling Scopes School JS Stage 0" class="footer-course-link">
+            </a>
         </footer>
     </div>
 </body>

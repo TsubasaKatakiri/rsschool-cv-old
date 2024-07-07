@@ -38,7 +38,7 @@ __[String incrementer kata from CODEWARS](https://www.codewars.com/kata/54a91a48
 
 ```
 function incrementString (strng) {
-  if(strng.match('[0-9]$')){
+    if(strng.match('[0-9]$')){
         let numPart = strng.split('').filter(e => e.match('[0-9]')).join('');
         let textPart = strng.split('').filter(e => !e.match('[0-9]')).join('');
         let numLength = numPart.length;
